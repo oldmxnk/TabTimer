@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Tab Timer",
+  "version": "1.0",
+  "description": "Set timers for tabs to automatically close them",
+  "icons": {
+    "48": "icons/timer-48.png",
+    "96": "icons/timer-96.png"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "notifications"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/timer-48.png",
+      "96": "icons/timer-96.png"
+    }
+  }
+}

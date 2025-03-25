@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tab Timer</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+  </head>
+  <body>
+    <div class="card">
+      <div style="text-align:center;">
+        <p>Tab Timer</p>
+      </div>
+      <div>
+        <form id="timer-form">
+
+          <label for="minutes">Minutes</label>
+          <input type="number" id="minutes" name="minutes" min="0" max="59" value="0" required>
+          
+          <label for="seconds">Seconds</label>
+          <input type="number" id="seconds" name="seconds" min="0" max="59" value="0" required>
+          
+          <label for="closetab">Close Current Tab</label>
+          <input type="checkbox" id="closetab" name="closetab">
+
+          <div id="button-grid">
+            <button class="button-grn" type="submit">Set Timer</button>
+            <button class="button-red" id="clear-btn" type="button">Clear Timer</button>
+          </div>
+        </form>
+      </div>
+      <div id="remaining-time">
+        <p>00:00</p>
+      </div>
+      <script src="popup.js"></script>
+    </div>
+  </body>
+</html>
